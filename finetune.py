@@ -24,7 +24,7 @@ np.random.seed(SEED)
 torch.manual_seed(SEED)
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--data", required=True, help="Path to data.jsonl")
+parser.add_argument("--data", required=True, help="/path/to/data.jsonl")
 parser.add_argument("--epochs", type=int, default=3)
 parser.add_argument("--lr", type=float, default=3e-5)
 args = parser.parse_args()
